@@ -1,0 +1,37 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependências
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+.vite/
+
+# Arquivos locais e sensíveis
+*.local
+.env
+.env.*.local
+
+# Diretórios e arquivos de IDE/editor
+.vscode/
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# Arquivos temporários e específicos do Windows/Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Outros
+*.lock
