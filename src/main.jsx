@@ -7,25 +7,27 @@ import PersonalTaskPage from "./pages/PersonalTaskPage.jsx";
 import Home from "./Home.jsx";
 import "./index.css";
 
+// Configura as rotas da aplicação
 const router = createBrowserRouter([
   {
-    path: "/personal-tasks",
+    path: "/personal-tasks", // Página das tasks pessoais
     element: <App />,
   },
   {
-    path: "/task",
+    path: "/task", // Página de detalhes da task
     element: <PersonalTaskPage />,
   },
   {
-    path: "/home",
+    path: "/home", // Tela inicial com opções
     element: <Home />,
   },
   {
-    path: "/work-tasks",
+    path: "/work-tasks", // Página das tasks do trabalho
     element: <App2 />,
   },
 ]);
 
+// Renderiza o app na div root, usando StrictMode para alertar sobre práticas recomendadas
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
